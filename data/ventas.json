@@ -1,0 +1,34 @@
+[
+  {
+    "dni": "7262",
+    "ruta": "Lima - Ica",
+    "hora": "10:00",
+    "bus": "45B",
+    "asiento": 1,
+    "precio": 45.0
+  },
+  {
+    "dni": "7262",
+    "ruta": "Lima - Ica",
+    "hora": "10:00",
+    "bus": "45B",
+    "asiento": 2,
+    "precio": 45.0
+  },
+  {
+    "dni": "7262",
+    "ruta": "Lima - Ica",
+    "hora": "10:00",
+    "bus": "45B",
+    "asiento": 3,
+    "precio": 45.0
+  },
+  {
+    "dni": "7262",
+    "ruta": "Lima - Ica",
+    "hora": "10:00",
+    "bus": "45B",
+    "asiento": 8,
+    "precio": 45.0
+  }
+]
