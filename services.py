@@ -7,10 +7,24 @@ def records(kind):
     defaults = {'buses': DEFAULT_BUSES, 'rutas': DEFAULT_ROUTES, 'pasajeros': [], 'ventas': []}
     return load(kind, defaults[kind])
 
+
 def add(kind, item):
     items = records(kind)
+
+    if kind == 'pasajeros':
+        dni = str(item.get('dni', '')).strip()
+
+        if not dni.isdigit() or len(dni) != 8:
+            raise ValueError('El DNI debe contener 8 dígitos.')
+
+        if any(str(p['dni']) == dni for p in items):
+            raise ValueError('El pasajero ya está registrado.')
+
+        item['dni'] = dni
+
     items.append(item)
     save(kind, items)
+
 
 def replace(kind, items):
     save(kind, items)
